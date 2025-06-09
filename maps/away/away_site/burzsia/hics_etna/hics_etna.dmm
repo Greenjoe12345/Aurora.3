@@ -6,9 +6,6 @@
 /turf/simulated/floor/tiled/white,
 /area/burzsia_station/shopette)
 "ab" = (
-/obj/effect/floor_decal/corner_wide/paleblue/full{
-	dir = 8
-	},
 /obj/structure/table/standard,
 /obj/item/roller{
 	pixel_y = 3
@@ -61,11 +58,12 @@
 /turf/simulated/floor/carpet/rubber,
 /area/burzsia_station/operations)
 "ae" = (
-/obj/machinery/door/firedoor,
-/obj/structure/grille,
-/obj/structure/window/shuttle/scc_space_ship,
-/turf/simulated/floor/tiled,
-/area/burzsia_station/gym)
+/obj/machinery/alarm/north,
+/turf/simulated/floor/tiled/freezer{
+	name = "cold storage tiles";
+	temperature = 278
+	},
+/area/burzsia_station/medbay)
 "af" = (
 /obj/effect/floor_decal/corner/grey/diagonal,
 /obj/structure/toilet{
@@ -102,6 +100,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/operations)
+"ao" = (
+/obj/structure/bed/stool/chair{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/burzsia_station/bardiner)
 "ap" = (
 /obj/effect/floor_decal/corner/beige{
 	dir = 10
@@ -606,6 +610,9 @@
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 4
 	},
+/obj/structure/bed/stool/chair/plastic{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
 "bk" = (
@@ -807,6 +814,13 @@
 /obj/item/modular_computer/laptop/preset/civilian,
 /turf/simulated/floor/tiled,
 /area/burzsia_station/operations)
+"bH" = (
+/obj/effect/floor_decal/industrial/warning,
+/obj/structure/sign/flag/burzsia{
+	pixel_y = 32
+	},
+/turf/simulated/floor/plating,
+/area/burzsia_station/mining)
 "bJ" = (
 /obj/structure/bed/stool/chair/office/dark{
 	dir = 8
@@ -1769,9 +1783,6 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/obj/effect/landmark/force_spawnpoint{
-	job_tag = "Off-Duty Crew Member"
-	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/primaryhall)
 "dW" = (
@@ -1795,6 +1806,15 @@
 /obj/machinery/light/floor,
 /turf/simulated/floor/tiled,
 /area/burzsia_station/primaryhall)
+"ea" = (
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/effect/floor_decal/corner_wide/green{
+	dir = 6
+	},
+/turf/simulated/floor/tiled/white,
+/area/burzsia_station/medbay)
 "ec" = (
 /obj/machinery/door/airlock/glass_security{
 	req_one_access = list(2,4)
@@ -2137,8 +2157,17 @@
 /obj/effect/floor_decal/corner/beige{
 	dir = 5
 	},
-/obj/structure/bed/stool/bar/padded/black,
+/obj/structure/bed/stool/bar/padded/black{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/dark,
+/area/burzsia_station/bardiner)
+"eN" = (
+/obj/machinery/chemical_dispenser/bar_soft/full{
+	pixel_y = 27
+	},
+/obj/effect/floor_decal/corner/beige/diagonal,
+/turf/simulated/floor/marble/dark,
 /area/burzsia_station/bardiner)
 "eO" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -2173,6 +2202,18 @@
 	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/primaryhall)
+"eU" = (
+/obj/effect/floor_decal/corner/lime{
+	dir = 10
+	},
+/obj/effect/floor_decal/corner/lime/full,
+/obj/effect/floor_decal/spline/plain{
+	dir = 10
+	},
+/obj/structure/table/standard,
+/obj/item/toy/ringbell,
+/turf/simulated/floor/tiled,
+/area/burzsia_station/gym)
 "eV" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/item/mop{
@@ -2360,6 +2401,10 @@
 "fz" = (
 /obj/structure/table/rack/folding_table,
 /obj/random/plushie,
+/obj/item/clothing/head/beret/corporate/heph{
+	pixel_x = 7;
+	pixel_y = 10
+	},
 /turf/simulated/floor/plating,
 /area/burzsia_station/mining)
 "fA" = (
@@ -2404,6 +2449,9 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
+/obj/machinery/door/airlock/glass{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/full,
 /area/burzsia_station/gym)
 "fE" = (
@@ -2422,18 +2470,11 @@
 /turf/simulated/floor/grass,
 /area/burzsia_station/arrivals)
 "fH" = (
-/obj/effect/floor_decal/corner/blue{
-	dir = 10
+/obj/machinery/door/airlock/medical{
+	name = "recovery room"
 	},
-/obj/machinery/light/floor,
-/obj/effect/landmark/start{
-	name = "Corporate Liaison"
-	},
-/obj/effect/landmark/force_spawnpoint{
-	job_tag = "Corporate Liaison"
-	},
-/turf/simulated/floor/tiled,
-/area/burzsia_station/securityhall)
+/turf/simulated/floor/tiled/white,
+/area/burzsia_station/medbay)
 "fI" = (
 /obj/effect/floor_decal/corner/orange/full,
 /obj/structure/sign/directions/all{
@@ -2548,6 +2589,18 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/burzsia_station/shopette)
+"fT" = (
+/obj/effect/floor_decal/corner/green{
+	dir = 4
+	},
+/obj/machinery/light/floor{
+	dir = 1
+	},
+/obj/effect/floor_decal/corner/green{
+	dir = 5
+	},
+/turf/simulated/floor/tiled,
+/area/burzsia_station/arrivalshall)
 "fU" = (
 /obj/effect/floor_decal/corner/orange{
 	dir = 6
@@ -2664,9 +2717,10 @@
 /turf/simulated/floor/wood,
 /area/burzsia_station/karaoke)
 "gm" = (
-/obj/effect/floor_decal/corner_wide/lime/diagonal,
-/obj/effect/floor_decal/industrial/warning/corner{
-	dir = 1
+/obj/machinery/atmospherics/unary/cryo_cell,
+/obj/effect/floor_decal/industrial/outline/blue,
+/obj/machinery/light{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/burzsia_station/medbay)
@@ -2872,6 +2926,11 @@
 /obj/structure/lattice/catwalk/indoor/grate,
 /turf/simulated/floor/plating,
 /area/burzsia_station/securityhall)
+"gM" = (
+/obj/effect/floor_decal/corner/beige/diagonal,
+/obj/machinery/appliance/cooker/oven,
+/turf/simulated/floor/marble/dark,
+/area/burzsia_station/bardiner)
 "gO" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 8;
@@ -3109,16 +3168,11 @@
 /turf/simulated/floor/tiled/steel,
 /area/burzsia_station/security)
 "ht" = (
-/obj/effect/floor_decal/spline/plain{
-	dir = 6;
-	layer = 2.02
+/obj/structure/bed/stool/chair{
+	dir = 1
 	},
-/obj/structure/bed/stool/padded/blue,
-/obj/effect/floor_decal/corner/lime/full{
-	dir = 4
-	},
-/turf/simulated/floor/tiled,
-/area/burzsia_station/gym)
+/turf/simulated/floor/tiled/dark,
+/area/burzsia_station/bardiner)
 "hu" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 8
@@ -3350,19 +3404,8 @@
 /area/burzsia_station/command)
 "ij" = (
 /obj/machinery/iv_drip,
-/obj/machinery/button/switch/holosign{
-	id = 1.1;
-	pixel_x = -26;
-	dir = 10
-	},
-/obj/machinery/button/switch/windowtint{
-	pixel_x = -21;
-	pixel_y = 8;
-	id = "hsurgery";
-	dir = 8
-	},
-/obj/effect/floor_decal/corner_wide/paleblue/full{
-	dir = 8
+/obj/effect/floor_decal/corner_wide/paleblue{
+	dir = 5
 	},
 /obj/effect/floor_decal/industrial/outline/red,
 /turf/simulated/floor/tiled/white,
@@ -3407,6 +3450,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/pool)
+"iq" = (
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/bed/stool/chair,
+/turf/simulated/floor/tiled/dark,
+/area/burzsia_station/bardiner)
 "ir" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/universal{
 	dir = 4
@@ -3482,17 +3532,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/arrivals)
 "iy" = (
-/obj/effect/floor_decal/corner/green{
-	dir = 9
+/obj/structure/bed/stool/chair/plastic{
+	dir = 8
 	},
-/obj/structure/sign/staff_only{
-	pixel_x = -32
-	},
-/obj/effect/landmark/force_spawnpoint{
-	job_tag = "Off-Duty Crew Member"
-	},
-/turf/simulated/floor/tiled,
-/area/burzsia_station/primaryhall)
+/turf/simulated/floor/tiled/dark,
+/area/burzsia_station/bardiner)
 "iz" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 10
@@ -3517,10 +3561,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/arrivals)
 "iD" = (
-/obj/effect/floor_decal/corner/beige/full{
-	dir = 1
-	},
 /obj/structure/extinguisher_cabinet/east,
+/obj/effect/floor_decal/corner/beige{
+	dir = 6
+	},
 /obj/effect/floor_decal/industrial/outline/firefighting_closet,
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
@@ -3535,18 +3579,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/arrivals)
 "iF" = (
-/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+/obj/structure/bed/stool/padded/red{
 	dir = 4
 	},
-/obj/structure/lattice/catwalk/indoor/grate,
-/obj/effect/landmark/start{
-	name = "Operations Manager"
-	},
-/obj/effect/landmark/force_spawnpoint{
-	job_tag = "Operations Manager"
-	},
-/turf/simulated/floor/plating,
-/area/burzsia_station/securityhall)
+/turf/simulated/floor/tiled/white,
+/area/burzsia_station/medbay)
 "iG" = (
 /obj/effect/map_effect/window_spawner/full/reinforced/grille/firedoor,
 /turf/simulated/floor,
@@ -3735,14 +3772,13 @@
 /turf/space,
 /area/space)
 "jj" = (
-/obj/effect/landmark/start{
-	name = "Chief Medical Officer"
+/obj/structure/bed/padded,
+/obj/item/bedsheet/medical,
+/obj/effect/floor_decal/corner_wide/green/full{
+	dir = 8
 	},
-/obj/effect/landmark/force_spawnpoint{
-	job_tag = "Chief Medical Officer"
-	},
-/turf/simulated/floor/tiled,
-/area/burzsia_station/securityhall)
+/turf/simulated/floor/tiled/white,
+/area/burzsia_station/medbay)
 "jk" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -3876,6 +3912,11 @@
 	},
 /turf/simulated/floor/plating,
 /area/burzsia_station/shopette)
+"jB" = (
+/obj/machinery/atmospherics/unary/cryo_cell,
+/obj/effect/floor_decal/industrial/outline/blue,
+/turf/simulated/floor/tiled/white,
+/area/burzsia_station/medbay)
 "jE" = (
 /obj/effect/floor_decal/corner/lime/diagonal,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -3939,9 +3980,7 @@
 /obj/machinery/light/floor{
 	dir = 8
 	},
-/obj/structure/bed/stool/chair/sofa/corner/convex/black{
-	dir = 1
-	},
+/obj/structure/table/steel,
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
 "jP" = (
@@ -4043,9 +4082,7 @@
 /obj/effect/floor_decal/corner/beige{
 	dir = 9
 	},
-/obj/structure/bed/stool/chair/sofa/left/black{
-	dir = 4
-	},
+/obj/structure/table/steel,
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
 "ka" = (
@@ -4148,6 +4185,15 @@
 /obj/effect/floor_decal/industrial/outline/emergency_closet,
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
+"kv" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	dir = 9
+	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/burzsia_station/medbay)
 "kz" = (
 /obj/effect/floor_decal/corner/beige/full{
 	dir = 1
@@ -4692,9 +4738,6 @@
 /obj/structure/railing/mapped{
 	dir = 1
 	},
-/obj/effect/landmark/force_spawnpoint{
-	job_tag = "Off-Duty Crew Member"
-	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/primaryhall)
 "lS" = (
@@ -4758,6 +4801,8 @@
 "lY" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/table/rack/folding_table,
+/obj/random/mre,
+/obj/random/booze,
 /turf/simulated/floor/plating,
 /area/burzsia_station/mining)
 "ma" = (
@@ -4815,12 +4860,11 @@
 /turf/simulated/floor/wood,
 /area/burzsia_station/karaoke)
 "mf" = (
-/obj/structure/bed/stool/bar/padded/black,
-/obj/effect/floor_decal/corner/beige{
-	dir = 5
+/obj/effect/floor_decal/corner_wide/paleblue{
+	dir = 10
 	},
-/turf/simulated/floor/tiled/dark,
-/area/burzsia_station/bardiner)
+/turf/simulated/floor/tiled/white,
+/area/burzsia_station/medbay)
 "mg" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/structure/lattice/catwalk/indoor/grate,
@@ -5321,15 +5365,17 @@
 /turf/simulated/floor/tiled,
 /area/burzsia_station/opshall)
 "nj" = (
-/obj/effect/floor_decal/corner/green/full{
-	dir = 1
+/obj/structure/bed/stool/padded/red{
+	dir = 4
 	},
-/obj/effect/decal/cleanable/dirt,
-/obj/machinery/light/floor{
-	dir = 1
+/obj/machinery/light{
+	dir = 8
 	},
-/turf/simulated/floor/tiled,
-/area/burzsia_station/arrivalshall)
+/obj/effect/floor_decal/corner_wide/green{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/white,
+/area/burzsia_station/medbay)
 "nk" = (
 /turf/simulated/floor/wood,
 /area/burzsia_station/karaoke)
@@ -5356,32 +5402,8 @@
 /turf/simulated/floor/tiled,
 /area/burzsia_station/atmos)
 "nn" = (
-/obj/structure/closet/walllocker/medical/secure{
-	name = "O- Blood Locker";
-	pixel_y = 32;
-	req_access = null
-	},
-/obj/effect/floor_decal/industrial/outline/red,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/item/reagent_containers/blood/OMinus,
-/obj/machinery/light/small{
-	dir = 4
-	},
-/turf/simulated/floor/tiled/freezer{
-	name = "cold storage tiles";
-	temperature = 278
-	},
+/obj/effect/floor_decal/corner_wide/paleblue/diagonal,
+/turf/simulated/floor/tiled/white,
 /area/burzsia_station/medbay)
 "no" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -5813,6 +5835,34 @@
 /obj/structure/lattice/catwalk/indoor/grate,
 /turf/simulated/floor/plating,
 /area/burzsia_station/mining)
+"om" = (
+/obj/structure/closet/walllocker/medical/secure{
+	name = "O- Blood Locker";
+	pixel_y = 32;
+	req_access = null
+	},
+/obj/effect/floor_decal/industrial/outline/red,
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/OMinus,
+/obj/item/reagent_containers/blood/OMinus,
+/obj/machinery/light/small{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/freezer{
+	name = "cold storage tiles";
+	temperature = 278
+	},
+/area/burzsia_station/medbay)
 "on" = (
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
@@ -6246,12 +6296,10 @@
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/arrivals)
 "pM" = (
-/obj/effect/floor_decal/corner_wide/paleblue/diagonal,
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
-	},
-/turf/simulated/floor/tiled/white,
-/area/burzsia_station/medbay)
+/obj/structure/table/rack/folding_table,
+/obj/random/mre,
+/turf/simulated/floor/plating,
+/area/burzsia_station/mining)
 "pN" = (
 /obj/structure/bed/stool/chair/office/dark{
 	dir = 1
@@ -6507,9 +6555,6 @@
 /area/burzsia_station/medbay)
 "qD" = (
 /obj/effect/floor_decal/corner_wide/lime/diagonal,
-/obj/effect/floor_decal/industrial/warning{
-	dir = 8
-	},
 /obj/effect/floor_decal/industrial/warning/corner{
 	dir = 4
 	},
@@ -6682,6 +6727,13 @@
 	},
 /turf/simulated/floor/tiled/full,
 /area/burzsia_station/gym)
+"rd" = (
+/obj/effect/floor_decal/corner/beige/diagonal,
+/obj/machinery/atmospherics/unary/vent_scrubber/on{
+	dir = 8
+	},
+/turf/simulated/floor/marble/dark,
+/area/burzsia_station/bardiner)
 "rg" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 10
@@ -6806,6 +6858,7 @@
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
+/obj/structure/table/rack/folding_table,
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
 "rD" = (
@@ -7017,7 +7070,9 @@
 /obj/effect/floor_decal/corner/beige{
 	dir = 6
 	},
-/obj/structure/bed/stool/bar/padded/black,
+/obj/structure/bed/stool/bar/padded/black{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
 "sc" = (
@@ -7100,12 +7155,11 @@
 /turf/simulated/floor/tiled,
 /area/burzsia_station/gym)
 "si" = (
-/obj/effect/floor_decal/corner/green/diagonal,
-/obj/effect/landmark/force_spawnpoint{
-	job_tag = "Off-Duty Crew Member"
+/obj/effect/floor_decal/corner_wide/green{
+	dir = 10
 	},
-/turf/simulated/floor/tiled,
-/area/burzsia_station/primaryhall)
+/turf/simulated/floor/tiled/white,
+/area/burzsia_station/medbay)
 "sj" = (
 /obj/structure/table/rack,
 /obj/item/clothing/head/sidecap/heph{
@@ -7212,9 +7266,6 @@
 	},
 /obj/effect/floor_decal/industrial/outline/firefighting_closet,
 /obj/structure/extinguisher_cabinet/west,
-/obj/effect/landmark/force_spawnpoint{
-	job_tag = "Off-Duty Crew Member"
-	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/primaryhall)
 "sx" = (
@@ -7403,6 +7454,9 @@
 	dir = 6
 	},
 /obj/effect/floor_decal/industrial/outline/service,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/white,
 /area/burzsia_station/medbay)
 "ta" = (
@@ -7454,9 +7508,6 @@
 /area/burzsia_station/medbay)
 "ti" = (
 /obj/effect/floor_decal/corner_wide/lime/diagonal,
-/obj/effect/floor_decal/industrial/warning{
-	dir = 1
-	},
 /obj/effect/ghostspawpoint{
 	identifier = "etna_med";
 	name = "igs - etna_med"
@@ -7587,7 +7638,9 @@
 /obj/effect/floor_decal/corner/beige/full{
 	dir = 1
 	},
-/obj/structure/bed/stool/bar/padded/black,
+/obj/structure/bed/stool/bar/padded/black{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
 "tD" = (
@@ -7607,14 +7660,13 @@
 /turf/simulated/floor/tiled,
 /area/burzsia_station/lifts)
 "tE" = (
-/obj/effect/landmark/start{
-	name = "Chief Engineer"
+/obj/structure/bed/padded,
+/obj/item/bedsheet/medical,
+/obj/effect/floor_decal/corner_wide/green{
+	dir = 5
 	},
-/obj/effect/landmark/force_spawnpoint{
-	job_tag = "Chief Engineer"
-	},
-/turf/simulated/floor/tiled,
-/area/burzsia_station/securityhall)
+/turf/simulated/floor/tiled/white,
+/area/burzsia_station/medbay)
 "tF" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 5
@@ -7672,6 +7724,23 @@
 	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/opshall)
+"tP" = (
+/obj/effect/floor_decal/corner/beige/diagonal,
+/obj/structure/table/stone/marble,
+/obj/item/material/knife{
+	pixel_x = -9
+	},
+/obj/item/reagent_containers/cooking_container/board/bowl,
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = -6;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/glass/beaker{
+	pixel_x = 6;
+	pixel_y = 8
+	},
+/turf/simulated/floor/marble/dark,
+/area/burzsia_station/bardiner)
 "tS" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -7685,14 +7754,8 @@
 /turf/simulated/floor/tiled/full,
 /area/burzsia_station/operations)
 "tT" = (
-/obj/effect/floor_decal/corner_wide/lime/full{
-	dir = 8
-	},
-/obj/effect/floor_decal/industrial/warning,
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 6
-	},
-/turf/simulated/floor/tiled/white,
+/obj/machinery/atmospherics/pipe/manifold/hidden,
+/turf/simulated/floor/tiled,
 /area/burzsia_station/medbay)
 "tU" = (
 /obj/effect/floor_decal/corner/lime/diagonal,
@@ -7819,21 +7882,24 @@
 /obj/effect/floor_decal/corner/beige{
 	dir = 9
 	},
-/obj/structure/bed/stool/chair/sofa/right/black{
-	dir = 4
-	},
+/obj/structure/table/rack/folding_table,
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
 "up" = (
 /obj/effect/floor_decal/corner/beige{
 	dir = 5
 	},
-/obj/structure/bed/stool/chair/sofa/left/black,
+/obj/structure/bed/stool/chair/plastic{
+	dir = 8
+	},
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
 "uq" = (
 /obj/structure/table/rack/folding_table,
 /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/black,
+/obj/random/smokable{
+	pixel_x = 13
+	},
 /turf/simulated/floor/plating,
 /area/burzsia_station/mining)
 "ur" = (
@@ -7967,6 +8033,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/pool)
+"uN" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/tiled,
+/area/burzsia_station/arrivalshall)
 "uO" = (
 /obj/effect/floor_decal/spline/plain{
 	dir = 4;
@@ -8053,6 +8125,10 @@
 /obj/structure/curtain/black,
 /turf/simulated/floor/plating,
 /area/burzsia_station/mining)
+"va" = (
+/obj/structure/table/rack/folding_table,
+/turf/simulated/floor/tiled/dark,
+/area/burzsia_station/bardiner)
 "vb" = (
 /obj/effect/floor_decal/corner/paleblue/full{
 	dir = 4
@@ -8099,6 +8175,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/pool)
+"vh" = (
+/obj/effect/floor_decal/corner/beige/diagonal,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/turf/simulated/floor/marble/dark,
+/area/burzsia_station/bardiner)
 "vi" = (
 /obj/effect/floor_decal/corner/blue{
 	dir = 9
@@ -8315,9 +8397,6 @@
 /obj/structure/railing/mapped{
 	dir = 4
 	},
-/obj/effect/landmark/force_spawnpoint{
-	job_tag = "Off-Duty Crew Member"
-	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/primaryhall)
 "vQ" = (
@@ -8378,6 +8457,7 @@
 "vY" = (
 /obj/structure/railing/mapped,
 /obj/effect/decal/cleanable/dirt,
+/obj/random/maintenance_junk_or_loot,
 /turf/simulated/floor/tiled/dark/full,
 /area/burzsia_station/mining)
 "wc" = (
@@ -8387,6 +8467,9 @@
 /obj/item/reagent_containers/food/drinks/drinkingglass/newglass/coffeecup/metal/hepht{
 	pixel_x = -6;
 	pixel_y = 7
+	},
+/obj/structure/sign/flag/heph{
+	pixel_y = 32
 	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/security)
@@ -8405,6 +8488,15 @@
 	},
 /turf/simulated/floor/tiled/full,
 /area/burzsia_station/security)
+"we" = (
+/obj/structure/table/rack/folding_table,
+/obj/item/towel/random,
+/obj/item/reagent_containers/toothbrush,
+/obj/item/reagent_containers/toothpaste{
+	pixel_y = 8
+	},
+/turf/simulated/floor/plating,
+/area/burzsia_station/mining)
 "wf" = (
 /obj/effect/floor_decal/corner/beige{
 	dir = 10
@@ -8614,162 +8706,13 @@
 /area/burzsia_station/shopette)
 "wj" = (
 /obj/effect/floor_decal/corner/beige/diagonal,
-/obj/structure/closet/walllocker{
-	pixel_x = 32;
-	name = "SCC Lunches locker"
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
+	dir = 6
 	},
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
-/obj/item/storage/toolbox/lunchbox/scc/filled,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 10;
+	pixel_y = 0
+	},
 /turf/simulated/floor/marble/dark,
 /area/burzsia_station/bardiner)
 "wk" = (
@@ -8882,6 +8825,12 @@
 /obj/effect/map_effect/window_spawner/full/reinforced/grille/firedoor,
 /turf/simulated/floor,
 /area/burzsia_station/operations)
+"wA" = (
+/obj/structure/table/rack/folding_table,
+/obj/random/smokable,
+/obj/item/clothing/head/softcap/colorable/random,
+/turf/simulated/floor/plating,
+/area/burzsia_station/mining)
 "wB" = (
 /obj/effect/floor_decal/corner_wide/lime{
 	dir = 5
@@ -8948,12 +8897,6 @@
 	},
 /obj/effect/floor_decal/corner/paleblue{
 	dir = 5
-	},
-/obj/effect/landmark/start{
-	name = "Captain"
-	},
-/obj/effect/landmark/force_spawnpoint{
-	job_tag = "Captain"
 	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/securityhall)
@@ -9040,8 +8983,8 @@
 /obj/effect/floor_decal/corner/beige{
 	dir = 10
 	},
-/obj/structure/bed/stool/bar/padded/black,
 /obj/machinery/firealarm/south,
+/obj/structure/table/steel,
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
 "wU" = (
@@ -9220,6 +9163,13 @@
 	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/pool)
+"xq" = (
+/obj/structure/closet/secure_closet/personal/patient,
+/obj/effect/floor_decal/corner_wide/green/full{
+	dir = 1
+	},
+/turf/simulated/floor/tiled/white,
+/area/burzsia_station/medbay)
 "xr" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
@@ -9360,13 +9310,13 @@
 /turf/simulated/floor/tiled,
 /area/burzsia_station/primaryhall)
 "xI" = (
-/obj/machinery/vending/boozeomat{
-	pixel_x = 32;
-	density = 0;
-	req_access = null
+/obj/effect/floor_decal/corner/beige{
+	dir = 10
 	},
-/obj/effect/floor_decal/corner/beige/diagonal,
-/turf/simulated/floor/marble/dark,
+/obj/structure/bed/stool/bar/padded/black{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
 "xJ" = (
 /obj/effect/floor_decal/corner/orange/full{
@@ -9396,6 +9346,27 @@
 "xL" = (
 /turf/simulated/wall,
 /area/burzsia_station/securityhall)
+"xM" = (
+/obj/effect/floor_decal/corner/beige/diagonal,
+/obj/machinery/vending/dinnerware{
+	density = 0;
+	pixel_y = 24
+	},
+/obj/structure/table/stone/marble,
+/obj/item/reagent_containers/food/condiment/sugar{
+	pixel_x = 7;
+	pixel_y = 8
+	},
+/obj/item/reagent_containers/food/condiment/sugar{
+	pixel_x = 7;
+	pixel_y = 2
+	},
+/obj/item/reagent_containers/food/condiment/enzyme{
+	pixel_x = -9;
+	pixel_y = 5
+	},
+/turf/simulated/floor/marble/dark,
+/area/burzsia_station/bardiner)
 "xN" = (
 /obj/effect/floor_decal/corner/lime{
 	dir = 10
@@ -9595,8 +9566,7 @@
 /area/burzsia_station/atmos)
 "yj" = (
 /obj/machinery/door/airlock/highsecurity{
-	dir = 4;
-	req_one_access = list(101)
+	dir = 4
 	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/mining)
@@ -9627,9 +9597,6 @@
 	},
 /obj/structure/railing/mapped{
 	dir = 8
-	},
-/obj/effect/landmark/force_spawnpoint{
-	job_tag = "Off-Duty Crew Member"
 	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/primaryhall)
@@ -9708,12 +9675,6 @@
 	dir = 9
 	},
 /obj/structure/lattice/catwalk/indoor/grate,
-/obj/effect/landmark/start{
-	name = "Head of Security"
-	},
-/obj/effect/landmark/force_spawnpoint{
-	job_tag = "Head of Security"
-	},
 /turf/simulated/floor/plating,
 /area/burzsia_station/securityhall)
 "yE" = (
@@ -9880,6 +9841,10 @@
 	},
 /turf/simulated/floor/tiled/full,
 /area/burzsia_station/primaryhall)
+"zd" = (
+/obj/structure/bed/stool/chair/plastic,
+/turf/simulated/floor/tiled/dark,
+/area/burzsia_station/bardiner)
 "ze" = (
 /obj/structure/ore_box,
 /obj/machinery/conveyor{
@@ -9890,6 +9855,7 @@
 /area/burzsia_station/sorting)
 "zf" = (
 /obj/structure/table/rack/folding_table,
+/obj/random/colored_jumpsuit,
 /obj/item/device/flashlight,
 /turf/simulated/floor/plating,
 /area/burzsia_station/mining)
@@ -10063,7 +10029,9 @@
 /obj/effect/floor_decal/corner/beige{
 	dir = 10
 	},
-/obj/structure/bed/stool/bar/padded/black,
+/obj/structure/bed/stool/bar/padded/black{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
 "zx" = (
@@ -10311,6 +10279,14 @@
 	},
 /turf/simulated/floor/carpet/rubber,
 /area/burzsia_station/operations)
+"Aj" = (
+/obj/structure/table/rack/folding_table,
+/obj/item/reagent_containers/toothbrush/red,
+/obj/item/reagent_containers/toothpaste{
+	pixel_y = 8
+	},
+/turf/simulated/floor/plating,
+/area/burzsia_station/mining)
 "Ak" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
 /obj/structure/sign/directions/all{
@@ -10577,6 +10553,19 @@
 /obj/structure/flora/rock,
 /turf/simulated/floor/holofloor/desert,
 /area/burzsia_station/arrivals)
+"AV" = (
+/obj/effect/floor_decal/corner/beige/diagonal,
+/obj/structure/table/stone/marble,
+/obj/item/storage/box/produce{
+	pixel_x = 3;
+	pixel_y = -5
+	},
+/obj/item/material/kitchen/rollingpin{
+	pixel_x = 6;
+	pixel_y = 10
+	},
+/turf/simulated/floor/marble/dark,
+/area/burzsia_station/bardiner)
 "AY" = (
 /obj/structure/closet/crate/miningcart,
 /obj/machinery/conveyor{
@@ -10856,6 +10845,7 @@
 	dir = 10;
 	pixel_y = 0
 	},
+/obj/structure/bed/stool/chair/folding,
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
 "BI" = (
@@ -10878,6 +10868,15 @@
 	},
 /turf/simulated/floor/tiled/white,
 /area/burzsia_station/shopette)
+"BM" = (
+/obj/machinery/light{
+	dir = 8
+	},
+/obj/effect/floor_decal/corner_wide/paleblue{
+	dir = 9
+	},
+/turf/simulated/floor/tiled/white,
+/area/burzsia_station/medbay)
 "BN" = (
 /obj/structure/railing/mapped{
 	dir = 1
@@ -10962,9 +10961,6 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
 	dir = 4
 	},
-/obj/effect/landmark/force_spawnpoint{
-	job_tag = "Off-Duty Crew Member"
-	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/primaryhall)
 "Cc" = (
@@ -11037,10 +11033,24 @@
 	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/atmos)
+"Cl" = (
+/obj/machinery/door/airlock/service{
+	name = "Restroom"
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/effect/floor_decal/corner/grey/diagonal,
+/turf/simulated/floor/tiled/full,
+/area/burzsia_station/arrivalshall)
 "Cm" = (
 /obj/effect/floor_decal/corner/grey/diagonal,
 /turf/simulated/floor/tiled/white,
 /area/burzsia_station/washroom)
+"Cn" = (
+/obj/effect/floor_decal/corner/beige/diagonal,
+/obj/machinery/appliance/cooker/fryer,
+/turf/simulated/floor/marble/dark,
+/area/burzsia_station/bardiner)
 "Co" = (
 /obj/effect/floor_decal/corner/paleblue/full{
 	dir = 1
@@ -11124,7 +11134,9 @@
 /obj/effect/floor_decal/corner/beige{
 	dir = 4
 	},
-/obj/structure/bed/stool/bar/padded/black,
+/obj/structure/bed/stool/bar/padded/black{
+	dir = 4
+	},
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
 "CB" = (
@@ -11175,6 +11187,13 @@
 	name = "Bar"
 	},
 /turf/simulated/floor/tiled/dark/full,
+/area/burzsia_station/bardiner)
+"CH" = (
+/obj/effect/floor_decal/corner/beige{
+	dir = 5
+	},
+/obj/structure/bed/stool/chair/folding,
+/turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
 "CI" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply{
@@ -11401,6 +11420,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/sorting)
+"Dl" = (
+/obj/structure/table/stone/marble,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/turf/simulated/floor/tiled/dark,
+/area/burzsia_station/bardiner)
 "Dm" = (
 /obj/structure/railing/mapped,
 /obj/structure/railing/mapped{
@@ -11519,11 +11544,12 @@
 /turf/simulated/floor/tiled,
 /area/burzsia_station/arrivalshall)
 "DD" = (
-/obj/effect/floor_decal/corner/lime/full{
-	dir = 4
+/obj/effect/floor_decal/corner/beige/full{
+	dir = 1
 	},
-/turf/simulated/floor/tiled,
-/area/burzsia_station/gym)
+/obj/machinery/vending/dinnerware/plastic,
+/turf/simulated/floor/tiled/dark,
+/area/burzsia_station/bardiner)
 "DE" = (
 /obj/effect/floor_decal/corner/orange/full{
 	dir = 1
@@ -11556,13 +11582,12 @@
 /turf/simulated/floor/carpet/rubber,
 /area/burzsia_station/operations)
 "DI" = (
-/obj/effect/floor_decal/corner/grey/diagonal,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
-/obj/machinery/door/airlock/service{
-	name = "Restroom"
+/obj/effect/floor_decal/corner/beige{
+	dir = 5
 	},
-/turf/simulated/floor/tiled/full,
+/turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
 "DJ" = (
 /obj/structure/table/standard,
@@ -11641,13 +11666,10 @@
 	name = "Sterile Sink";
 	pixel_x = -20
 	},
-/obj/effect/floor_decal/corner_wide/paleblue/full{
-	dir = 8
+/obj/effect/floor_decal/corner_wide/paleblue{
+	dir = 9
 	},
 /obj/effect/floor_decal/industrial/outline/blue,
-/obj/machinery/light{
-	dir = 1
-	},
 /turf/simulated/floor/tiled/white,
 /area/burzsia_station/medbay)
 "DU" = (
@@ -12473,6 +12495,12 @@
 /obj/machinery/light/floor,
 /turf/simulated/floor/tiled,
 /area/burzsia_station/rechall)
+"Ft" = (
+/obj/structure/bed/stool/bar/padded/black{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/burzsia_station/bardiner)
 "Fu" = (
 /obj/structure/sign/staff_only{
 	pixel_x = 32
@@ -12528,9 +12556,6 @@
 /obj/structure/bed/stool/chair{
 	dir = 4
 	},
-/obj/structure/sign/flag/heph{
-	pixel_x = -32
-	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/security)
 "FC" = (
@@ -12540,9 +12565,6 @@
 /obj/effect/floor_decal/corner/green/diagonal,
 /obj/structure/railing/mapped{
 	dir = 8
-	},
-/obj/effect/landmark/force_spawnpoint{
-	job_tag = "Off-Duty Crew Member"
 	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/primaryhall)
@@ -12619,7 +12641,14 @@
 /turf/simulated/floor/carpet/rubber,
 /area/burzsia_station/operations)
 "FO" = (
-/obj/effect/floor_decal/corner/lime,
+/obj/effect/floor_decal/spline/plain{
+	dir = 6;
+	layer = 2.02
+	},
+/obj/structure/bed/stool/padded/blue,
+/obj/effect/floor_decal/corner/lime/full{
+	dir = 4
+	},
 /obj/machinery/atmospherics/unary/vent_pump/on{
 	dir = 1
 	},
@@ -12630,13 +12659,15 @@
 /turf/unsimulated/floor,
 /area/burzsia_station/tcomms)
 "FQ" = (
-/obj/effect/floor_decal/industrial/hatch/yellow,
-/obj/machinery/door/airlock/multi_tile/glass{
-	name = "Sparring Gym";
-	dir = 2
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4;
+	layer = 2.8
 	},
-/turf/simulated/floor/tiled/full,
-/area/burzsia_station/gym)
+/obj/structure/bed/stool/chair/folding{
+	dir = 1
+	},
+/turf/simulated/floor/plating,
+/area/burzsia_station/mining)
 "FR" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
 	dir = 8
@@ -12652,6 +12683,18 @@
 	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/operations)
+"FT" = (
+/obj/effect/floor_decal/corner/green{
+	dir = 5
+	},
+/obj/machinery/atmospherics/pipe/simple/hidden/supply{
+	dir = 4
+	},
+/obj/structure/sign/flag/burzsia{
+	pixel_y = 32
+	},
+/turf/simulated/floor/tiled,
+/area/burzsia_station/primaryhall)
 "FV" = (
 /obj/effect/floor_decal/corner/blue/diagonal,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -12679,7 +12722,6 @@
 /turf/simulated/floor/tiled,
 /area/burzsia_station/arrivalshall)
 "Gb" = (
-/obj/structure/table/steel,
 /obj/machinery/light/floor,
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
@@ -12957,6 +12999,16 @@
 	},
 /turf/simulated/floor/carpet/rubber,
 /area/burzsia_station/atmos)
+"GP" = (
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
+	},
+/obj/effect/floor_decal/industrial/warning,
+/obj/structure/closet/crate/bin{
+	name = "trashbin"
+	},
+/turf/simulated/floor/plating,
+/area/burzsia_station/mining)
 "GS" = (
 /obj/effect/floor_decal/corner/beige{
 	dir = 5
@@ -12964,6 +13016,12 @@
 /obj/machinery/firealarm/north,
 /turf/simulated/floor/tiled,
 /area/burzsia_station/operations)
+"GT" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/burzsia_station/medbay)
 "GU" = (
 /obj/structure/table/wood,
 /obj/item/reagent_containers/food/drinks/cans/cola{
@@ -13210,6 +13268,15 @@
 "HC" = (
 /turf/simulated/wall,
 /area/burzsia_station/arrivalshall)
+"HD" = (
+/obj/effect/floor_decal/corner/beige{
+	dir = 5
+	},
+/obj/structure/bed/stool/bar/padded/black{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/burzsia_station/bardiner)
 "HE" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -13541,11 +13608,6 @@
 /obj/machinery/chemical_dispenser/coffeemaster/full{
 	pixel_y = 27
 	},
-/obj/machinery/chemical_dispenser/bar_soft/full{
-	dir = 8;
-	pixel_x = 21;
-	pixel_y = 3
-	},
 /obj/effect/floor_decal/corner/beige/diagonal,
 /turf/simulated/floor/marble/dark,
 /area/burzsia_station/bardiner)
@@ -13573,6 +13635,15 @@
 /obj/machinery/light,
 /turf/simulated/floor/tiled,
 /area/burzsia_station/security)
+"IA" = (
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/floor_decal/industrial/warning{
+	dir = 4;
+	layer = 2.8
+	},
+/obj/structure/table/rack/folding_table,
+/turf/simulated/floor/plating,
+/area/burzsia_station/mining)
 "IB" = (
 /obj/structure/bed/padded,
 /obj/random/plushie,
@@ -13821,6 +13892,15 @@
 /obj/machinery/firealarm/west,
 /turf/simulated/floor/tiled,
 /area/burzsia_station/lifts)
+"Jm" = (
+/obj/effect/floor_decal/corner/beige{
+	dir = 5
+	},
+/obj/structure/bed/stool/bar/padded/black{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/dark,
+/area/burzsia_station/bardiner)
 "Jn" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -13984,10 +14064,10 @@
 /turf/simulated/floor,
 /area/burzsia_station/atmos)
 "JH" = (
-/obj/machinery/atmospherics/pipe/simple/hidden{
-	dir = 9
+/obj/effect/floor_decal/industrial/warning{
+	dir = 1
 	},
-/turf/simulated/floor/tiled,
+/turf/simulated/floor/tiled/white,
 /area/burzsia_station/medbay)
 "JI" = (
 /obj/effect/floor_decal/corner/green{
@@ -14104,12 +14184,12 @@
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/arrivals)
 "JV" = (
-/obj/effect/floor_decal/corner/green/diagonal,
-/obj/effect/landmark{
-	name = "JoinLateCryo"
+/obj/effect/floor_decal/corner/beige{
+	dir = 10
 	},
-/turf/simulated/floor/tiled,
-/area/burzsia_station/lifts)
+/obj/structure/table/rack/folding_table,
+/turf/simulated/floor/tiled/dark,
+/area/burzsia_station/bardiner)
 "JW" = (
 /obj/structure/table/wood,
 /obj/item/material/ashtray/bronze{
@@ -14276,17 +14356,12 @@
 /turf/simulated/floor/tiled,
 /area/burzsia_station/security)
 "Kx" = (
-/obj/effect/floor_decal/corner/lime/diagonal,
-/obj/item/toy/ringbell,
-/obj/structure/table/standard,
-/obj/item/clothing/gloves/boxing/blue{
-	pixel_y = -17
+/obj/effect/floor_decal/corner/beige/diagonal,
+/obj/machinery/atmospherics/unary/vent_pump/on{
+	dir = 4
 	},
-/obj/item/clothing/gloves/boxing{
-	pixel_y = -14
-	},
-/turf/simulated/floor/tiled,
-/area/burzsia_station/gym)
+/turf/simulated/floor/marble/dark,
+/area/burzsia_station/bardiner)
 "Ky" = (
 /obj/effect/floor_decal/corner/green{
 	dir = 10
@@ -14414,9 +14489,11 @@
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/arrivals)
 "KL" = (
-/obj/machinery/atmospherics/pipe/simple/hidden,
-/turf/simulated/floor/tiled,
-/area/burzsia_station/medbay)
+/obj/structure/bed/stool/chair/folding{
+	dir = 4
+	},
+/turf/simulated/floor/tiled/dark,
+/area/burzsia_station/bardiner)
 "KM" = (
 /obj/effect/floor_decal/industrial/outline/service,
 /obj/structure/flora/pottedplant{
@@ -14601,15 +14678,17 @@
 /turf/simulated/wall,
 /area/burzsia_station/karaoke)
 "Li" = (
-/obj/structure/table/steel,
-/obj/effect/floor_decal/corner/beige{
-	dir = 5
-	},
-/obj/machinery/light/floor{
-	dir = 1;
-	pixel_y = 7
-	},
-/turf/simulated/floor/tiled/dark,
+/obj/effect/floor_decal/corner/beige/diagonal,
+/obj/structure/closet/secure_closet/freezer/meat,
+/obj/item/reagent_containers/food/condiment/flour,
+/obj/item/reagent_containers/food/condiment/flour,
+/obj/item/reagent_containers/food/drinks/carton/soymilk,
+/obj/item/reagent_containers/food/drinks/carton/soymilk,
+/obj/item/reagent_containers/food/drinks/carton/milk,
+/obj/item/reagent_containers/food/drinks/carton/milk,
+/obj/item/storage/box/fancy/egg_box,
+/obj/item/storage/box/fancy/egg_box,
+/turf/simulated/floor/marble/dark,
 /area/burzsia_station/bardiner)
 "Lj" = (
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -14813,6 +14892,16 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /turf/simulated/floor/tiled,
 /area/burzsia_station/pool)
+"LO" = (
+/obj/effect/floor_decal/corner/beige{
+	dir = 5
+	},
+/obj/machinery/light/floor{
+	dir = 1
+	},
+/obj/structure/table/steel,
+/turf/simulated/floor/tiled/dark,
+/area/burzsia_station/bardiner)
 "LP" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/railing/mapped,
@@ -14995,6 +15084,7 @@
 	dir = 4;
 	layer = 2.8
 	},
+/obj/structure/bed/stool/chair/folding,
 /turf/simulated/floor/plating,
 /area/burzsia_station/mining)
 "Mw" = (
@@ -15102,7 +15192,8 @@
 	icon_state = "Epacket0";
 	cigarette_to_spawn = null
 	},
-/obj/machinery/alarm/north,
+/obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
+/obj/machinery/atmospherics/pipe/simple/hidden/supply,
 /turf/simulated/floor/tiled,
 /area/burzsia_station/arrivalshall)
 "MM" = (
@@ -15362,6 +15453,14 @@
 	},
 /turf/simulated/floor/marble/dark,
 /area/burzsia_station/primaryhall)
+"Nu" = (
+/obj/machinery/vending/boozeomat{
+	random_itemcount = 1;
+	req_access = null
+	},
+/obj/effect/floor_decal/corner/beige/diagonal,
+/turf/simulated/floor/marble/dark,
+/area/burzsia_station/bardiner)
 "Nw" = (
 /obj/machinery/atmospherics/unary/vent_scrubber/on{
 	dir = 8
@@ -15408,6 +15507,17 @@
 	},
 /turf/simulated/floor/wood,
 /area/burzsia_station/karaoke)
+"NE" = (
+/obj/structure/curtain/open/medical,
+/obj/structure/table/glass{
+	table_reinf = "glass"
+	},
+/obj/item/folder,
+/obj/effect/floor_decal/corner_wide/green{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/white,
+/area/burzsia_station/medbay)
 "NF" = (
 /obj/effect/floor_decal/corner/beige/diagonal,
 /obj/effect/decal/cleanable/dirt,
@@ -15540,13 +15650,11 @@
 /turf/space,
 /area/space)
 "NZ" = (
-/obj/machinery/atmospherics/unary/cryo_cell,
-/obj/effect/floor_decal/industrial/outline/blue,
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/simulated/floor/tiled,
-/area/burzsia_station/medbay)
+/obj/structure/table/rack/folding_table,
+/obj/random/hoodie,
+/obj/random/plushie,
+/turf/simulated/floor/plating,
+/area/burzsia_station/mining)
 "Oa" = (
 /obj/effect/floor_decal/corner/lime/diagonal,
 /obj/effect/floor_decal/industrial/outline/service,
@@ -15865,8 +15973,15 @@
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 8
 	},
+/obj/machinery/computer/sentencing/courtroom{
+	pixel_y = 32
+	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/security)
+"Oy" = (
+/obj/structure/curtain/open/medical,
+/turf/simulated/floor/tiled/white,
+/area/burzsia_station/medbay)
 "OA" = (
 /obj/effect/floor_decal/corner/paleblue/diagonal,
 /obj/structure/table/standard,
@@ -15904,6 +16019,7 @@
 	dir = 8;
 	must_start_working = 1
 	},
+/obj/random/maintenance_junk_or_loot,
 /turf/simulated/floor/plating,
 /area/burzsia_station/mining)
 "OF" = (
@@ -16044,11 +16160,9 @@
 /turf/simulated/floor/tiled/white,
 /area/burzsia_station/medbay)
 "OW" = (
-/obj/effect/landmark{
-	name = "JoinLateCryo"
-	},
-/turf/simulated/floor/tiled,
-/area/burzsia_station/lifts)
+/obj/effect/floor_decal/corner_wide/green/full,
+/turf/simulated/floor/tiled/white,
+/area/burzsia_station/medbay)
 "OX" = (
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 8
@@ -16153,6 +16267,12 @@
 /obj/machinery/light/floor,
 /turf/simulated/floor/wood,
 /area/burzsia_station/command)
+"Pj" = (
+/obj/effect/floor_decal/corner_wide/paleblue{
+	dir = 5
+	},
+/turf/simulated/floor/tiled/white,
+/area/burzsia_station/medbay)
 "Pk" = (
 /obj/machinery/door/firedoor,
 /obj/structure/grille,
@@ -16176,6 +16296,7 @@
 	pixel_x = -3;
 	pixel_y = -2
 	},
+/obj/machinery/alarm/north,
 /turf/simulated/floor/tiled,
 /area/burzsia_station/arrivalshall)
 "Pn" = (
@@ -16212,6 +16333,18 @@
 	},
 /turf/simulated/floor/carpet/darkblue,
 /area/burzsia_station/karaoke)
+"Pr" = (
+/obj/structure/closet/crate/freezer{
+	name = "Fridge"
+	},
+/obj/effect/floor_decal/industrial/hatch/grey,
+/obj/item/storage/box/freezer/organcooler,
+/obj/item/storage/box/monkeycubes,
+/turf/simulated/floor/tiled/freezer{
+	name = "cold storage tiles";
+	temperature = 278
+	},
+/area/burzsia_station/medbay)
 "Ps" = (
 /obj/effect/floor_decal/corner/green,
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
@@ -16405,6 +16538,7 @@
 	icon_state = "bsposter37";
 	pixel_x = -32
 	},
+/obj/structure/table/steel,
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
 "PT" = (
@@ -16432,18 +16566,11 @@
 /turf/simulated/floor/tiled,
 /area/burzsia_station/primaryhall)
 "PV" = (
-/obj/structure/closet/crate/freezer{
-	name = "Fridge"
+/obj/structure/sign/flag/burzsia{
+	pixel_y = 32
 	},
-/obj/effect/floor_decal/industrial/hatch/grey,
-/obj/item/storage/box/freezer/organcooler,
-/obj/item/storage/box/monkeycubes,
-/obj/machinery/alarm/north,
-/turf/simulated/floor/tiled/freezer{
-	name = "cold storage tiles";
-	temperature = 278
-	},
-/area/burzsia_station/medbay)
+/turf/simulated/floor/plating,
+/area/burzsia_station/mining)
 "PW" = (
 /turf/simulated/floor/tiled,
 /area/burzsia_station/securityhall)
@@ -16460,9 +16587,7 @@
 /obj/machinery/light/floor{
 	dir = 8
 	},
-/obj/structure/bed/stool/chair/sofa/corner/concave/black{
-	dir = 4
-	},
+/obj/structure/table/rack/folding_table,
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
 "Qa" = (
@@ -16471,6 +16596,12 @@
 	},
 /turf/simulated/floor/carpet/orange,
 /area/burzsia_station/command)
+"Qb" = (
+/obj/structure/sign/flag/burzsia{
+	pixel_x = 32
+	},
+/turf/simulated/floor/plating,
+/area/burzsia_station/mining)
 "Qd" = (
 /obj/effect/floor_decal/corner/beige{
 	dir = 5
@@ -16546,6 +16677,12 @@
 	},
 /turf/simulated/floor/tiled/dark/full,
 /area/burzsia_station/operations)
+"Qs" = (
+/obj/structure/table/rack/folding_table,
+/obj/random/mre,
+/obj/random/mre,
+/turf/simulated/floor/plating,
+/area/burzsia_station/mining)
 "Qu" = (
 /obj/effect/floor_decal/spline/plain{
 	layer = 2.02
@@ -16576,9 +16713,6 @@
 /turf/simulated/floor/tiled/full,
 /area/burzsia_station/sscrepoffice)
 "Qz" = (
-/obj/effect/floor_decal/industrial/warning/corner{
-	dir = 8
-	},
 /obj/effect/floor_decal/corner_wide/lime/diagonal,
 /obj/effect/floor_decal/industrial/warning/corner,
 /obj/machinery/atmospherics/pipe/simple/hidden{
@@ -16586,6 +16720,9 @@
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers{
 	dir = 6
+	},
+/obj/effect/floor_decal/industrial/warning{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/white,
 /area/burzsia_station/medbay)
@@ -17128,6 +17265,12 @@
 	},
 /turf/simulated/floor/tiled/full,
 /area/burzsia_station/park)
+"RT" = (
+/obj/structure/lattice/catwalk/indoor/grate,
+/obj/machinery/atmospherics/pipe/manifold/hidden/supply,
+/obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
+/turf/simulated/floor/plating,
+/area/burzsia_station/arrivalshall)
 "RV" = (
 /obj/effect/floor_decal/corner/green/diagonal,
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers{
@@ -17648,14 +17791,14 @@
 "Tx" = (
 /obj/effect/floor_decal/corner_wide/lime/diagonal,
 /obj/effect/floor_decal/industrial/warning{
-	dir = 8
-	},
-/obj/effect/floor_decal/industrial/warning{
 	dir = 4;
 	layer = 2.8
 	},
 /obj/machinery/atmospherics/pipe/simple/hidden/scrubbers,
 /obj/machinery/atmospherics/unary/vent_pump/on,
+/obj/effect/floor_decal/industrial/warning/corner{
+	dir = 1
+	},
 /turf/simulated/floor/tiled/white,
 /area/burzsia_station/medbay)
 "Tz" = (
@@ -18047,6 +18190,28 @@
 "Us" = (
 /turf/simulated/wall,
 /area/burzsia_station/gym)
+"Ut" = (
+/obj/machinery/light{
+	dir = 1
+	},
+/obj/machinery/button/switch/holosign{
+	id = 1.1;
+	dir = 1;
+	pixel_y = 32;
+	pixel_x = 5
+	},
+/obj/machinery/button/switch/windowtint{
+	pixel_x = -3;
+	pixel_y = 32;
+	id = "hsurgery";
+	dir = 1
+	},
+/obj/structure/table/standard,
+/obj/effect/floor_decal/corner_wide/paleblue/full{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/burzsia_station/medbay)
 "Uu" = (
 /obj/machinery/door/airlock/glass_security{
 	name = "Cell 2";
@@ -18108,17 +18273,11 @@
 /turf/simulated/floor/plating,
 /area/burzsia_station/mining)
 "UE" = (
-/obj/effect/floor_decal/corner/blue{
-	dir = 10
+/obj/structure/bed/stool/chair/plastic{
+	dir = 4
 	},
-/obj/effect/landmark/start{
-	name = "Executive Officer"
-	},
-/obj/effect/landmark/force_spawnpoint{
-	job_tag = "Executive Officer"
-	},
-/turf/simulated/floor/tiled,
-/area/burzsia_station/securityhall)
+/turf/simulated/floor/tiled/dark,
+/area/burzsia_station/bardiner)
 "UI" = (
 /obj/machinery/floor_light/dance/alternate,
 /obj/machinery/alarm/north,
@@ -18252,8 +18411,8 @@
 /turf/simulated/floor/tiled/white,
 /area/burzsia_station/medbay)
 "UT" = (
-/obj/structure/bed/stool/chair/sofa/right/black{
-	dir = 1
+/obj/structure/bed/stool/chair/folding{
+	dir = 8
 	},
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
@@ -18344,15 +18503,10 @@
 /turf/simulated/floor/carpet/darkblue,
 /area/burzsia_station/karaoke)
 "Ve" = (
-/obj/machinery/atmospherics/unary/vent_pump/on,
-/obj/effect/landmark/start{
-	name = "Consular Officer"
-	},
-/obj/effect/landmark/force_spawnpoint{
-	job_tag = "Consular Officer"
-	},
-/turf/simulated/floor/tiled,
-/area/burzsia_station/securityhall)
+/obj/effect/floor_decal/corner/beige/diagonal,
+/obj/structure/closet/secure_closet/freezer/meat,
+/turf/simulated/floor/marble/dark,
+/area/burzsia_station/bardiner)
 "Vg" = (
 /obj/machinery/r_n_d/protolathe,
 /obj/effect/floor_decal/industrial/hatch/yellow,
@@ -18384,14 +18538,9 @@
 /turf/simulated/floor/tiled,
 /area/burzsia_station/afthall)
 "Vl" = (
-/obj/effect/floor_decal/corner/green{
-	dir = 9
-	},
-/obj/effect/landmark/force_spawnpoint{
-	job_tag = "Off-Duty Crew Member"
-	},
-/turf/simulated/floor/tiled,
-/area/burzsia_station/primaryhall)
+/obj/structure/bed/stool/chair/folding,
+/turf/simulated/floor/tiled/dark,
+/area/burzsia_station/bardiner)
 "Vm" = (
 /obj/machinery/atmospherics/pipe/manifold/hidden/scrubbers,
 /obj/machinery/atmospherics/pipe/manifold/hidden/supply{
@@ -18487,11 +18636,11 @@
 /obj/effect/floor_decal/corner/beige{
 	dir = 5
 	},
-/obj/structure/bed/stool/bar/padded/black,
 /obj/machinery/firealarm/north,
 /obj/machinery/light/floor{
 	dir = 1
 	},
+/obj/structure/bed/stool/chair,
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
 "Vy" = (
@@ -18750,14 +18899,8 @@
 /turf/simulated/floor/tiled,
 /area/burzsia_station/sorting)
 "Wm" = (
-/obj/structure/table/steel,
-/obj/item/material/ashtray/bronze{
-	pixel_x = -8;
-	pixel_y = 8
-	},
-/obj/item/material/ashtray/bronze{
-	pixel_x = -8;
-	pixel_y = 8
+/obj/structure/bed/stool/chair{
+	dir = 4
 	},
 /turf/simulated/floor/tiled/dark,
 /area/burzsia_station/bardiner)
@@ -18770,14 +18913,13 @@
 /turf/simulated/floor/tiled/full,
 /area/burzsia_station/primaryhall)
 "Wq" = (
-/obj/effect/floor_decal/corner/green{
-	dir = 6
+/obj/structure/curtain/open/medical,
+/obj/structure/table/glass{
+	table_reinf = "glass"
 	},
-/obj/effect/landmark/force_spawnpoint{
-	job_tag = "Off-Duty Crew Member"
-	},
-/turf/simulated/floor/tiled,
-/area/burzsia_station/primaryhall)
+/obj/item/folder,
+/turf/simulated/floor/tiled/white,
+/area/burzsia_station/medbay)
 "Wr" = (
 /obj/structure/table/standard,
 /obj/effect/floor_decal/corner/lime/diagonal,
@@ -18865,14 +19007,22 @@
 /turf/simulated/floor/tiled/white,
 /area/burzsia_station/shopette)
 "WB" = (
-/obj/effect/floor_decal/corner_wide/paleblue{
-	dir = 9
+/obj/effect/floor_decal/corner/beige/diagonal,
+/obj/structure/table/stone/marble,
+/obj/item/reagent_containers/food/condiment/shaker/spacespice{
+	pixel_x = 3;
+	pixel_y = 1
 	},
-/obj/machinery/light{
-	dir = 8
+/obj/item/reagent_containers/food/condiment/shaker/peppermill{
+	pixel_x = -4;
+	pixel_y = 7
 	},
-/turf/simulated/floor/tiled/white,
-/area/burzsia_station/medbay)
+/obj/item/reagent_containers/food/condiment/shaker/salt{
+	pixel_x = 8;
+	pixel_y = 7
+	},
+/turf/simulated/floor/marble/dark,
+/area/burzsia_station/bardiner)
 "WC" = (
 /obj/structure/lattice/catwalk/indoor/grate,
 /turf/simulated/floor/plating,
@@ -19147,8 +19297,7 @@
 	pixel_y = 7
 	},
 /obj/machinery/light/floor{
-	dir = 1;
-	pixel_y = 7
+	dir = 1
 	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/arrivalshall)
@@ -19261,6 +19410,10 @@
 	pixel_x = -3;
 	pixel_y = -3
 	},
+/obj/structure/closet/crate/bin{
+	name = "trashbin"
+	},
+/obj/item/trash/plate,
 /turf/simulated/floor/plating,
 /area/burzsia_station/mining)
 "XK" = (
@@ -19771,6 +19924,12 @@
 	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/sorting)
+"YW" = (
+/obj/effect/floor_decal/corner_wide/paleblue/full{
+	dir = 8
+	},
+/turf/simulated/floor/tiled/white,
+/area/burzsia_station/medbay)
 "YX" = (
 /obj/effect/floor_decal/industrial/warning{
 	dir = 1
@@ -19821,22 +19980,12 @@
 /turf/simulated/floor/plating,
 /area/burzsia_station/mining)
 "Zg" = (
-/obj/machinery/door/airlock/highsecurity{
-	req_one_access = list(101)
-	},
+/obj/machinery/door/airlock/highsecurity,
 /turf/simulated/floor/tiled,
 /area/burzsia_station/mining)
 "Zh" = (
-/obj/structure/bed/stool/padded/red,
-/obj/effect/floor_decal/corner/lime{
-	dir = 10
-	},
-/obj/effect/floor_decal/corner/lime/full,
-/obj/effect/floor_decal/spline/plain{
-	dir = 10
-	},
-/turf/simulated/floor/tiled,
-/area/burzsia_station/gym)
+/turf/simulated/wall/shuttle/scc_space_ship/cardinal,
+/area/burzsia_station/washroom)
 "Zi" = (
 /obj/effect/decal/fake_object{
 	color = "#B6B64B";
@@ -19956,9 +20105,6 @@
 /obj/machinery/light/floor{
 	dir = 1
 	},
-/obj/effect/landmark/force_spawnpoint{
-	job_tag = "Off-Duty Crew Member"
-	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/primaryhall)
 "Zw" = (
@@ -20020,6 +20166,11 @@
 	},
 /turf/simulated/floor/tiled,
 /area/burzsia_station/security)
+"ZI" = (
+/obj/effect/floor_decal/corner/beige/diagonal,
+/obj/machinery/appliance/cooker/stove,
+/turf/simulated/floor/marble/dark,
+/area/burzsia_station/bardiner)
 "ZK" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/closet/crate/bin{
@@ -42918,7 +43069,7 @@ xu
 fu
 wP
 oo
-Wg
+wA
 wP
 OD
 wP
@@ -43690,8 +43841,8 @@ WS
 Uw
 UX
 Mv
-Mv
-qi
+IA
+FQ
 qi
 qi
 qi
@@ -43953,7 +44104,7 @@ sC
 sC
 sC
 sC
-Wg
+pM
 YI
 lp
 lp
@@ -44206,7 +44357,7 @@ wP
 oB
 aH
 wP
-sC
+PV
 sC
 sC
 sC
@@ -44681,14 +44832,14 @@ lp
 lp
 lp
 lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
+As
+As
+As
+As
+As
+As
+As
+As
 As
 As
 As
@@ -44722,7 +44873,7 @@ wP
 wP
 sC
 wP
-Wg
+Aj
 bX
 wP
 YI
@@ -44938,15 +45089,15 @@ lp
 lp
 lp
 lp
-lp
-lp
-lp
-lp
-lp
-lp
-lp
 As
-As
+jj
+nj
+OW
+Rx
+ae
+Pr
+Rx
+Ut
 DT
 rR
 He
@@ -44975,7 +45126,7 @@ mB
 aw
 wP
 IB
-ja
+we
 wP
 sC
 wP
@@ -45195,16 +45346,16 @@ lp
 lp
 lp
 lp
-lp
-lp
-lp
-lp
-lp
-lp
 As
-As
+Wq
+Oy
+si
+Rx
+om
+Kp
+Rx
 ij
-cc
+rs
 Jh
 FL
 Rx
@@ -45452,13 +45603,13 @@ lp
 lp
 lp
 lp
-lp
-lp
-lp
-lp
-lp
 As
-As
+tE
+iF
+si
+Rx
+Rx
+mA
 Rx
 sU
 jq
@@ -45709,13 +45860,13 @@ lp
 lp
 lp
 lp
-lp
-lp
-lp
-lp
 As
-As
-PV
+NE
+Oy
+si
+Rx
+YW
+nn
 Rx
 vf
 xx
@@ -45966,13 +46117,13 @@ lp
 lp
 lp
 lp
-lp
-lp
-lp
 As
-As
+xq
+ea
+rs
+fH
 nn
-Kp
+mf
 Rx
 YZ
 YZ
@@ -45998,7 +46149,7 @@ TX
 Dg
 sC
 sC
-Wg
+Qs
 qU
 RI
 DV
@@ -46223,14 +46374,14 @@ lp
 lp
 lp
 lp
-lp
-lp
-As
 As
 Rx
 Rx
-mA
 Rx
+Rx
+Pj
+GT
+BM
 ab
 YJ
 ra
@@ -46480,15 +46631,15 @@ lp
 lp
 lp
 lp
-lp
 As
-As
-NZ
+gm
 vo
 IL
-pM
-WB
+kv
 cc
+rs
+rs
+rs
 uR
 kY
 za
@@ -46509,13 +46660,13 @@ wo
 Hh
 ni
 TX
-pZ
+GP
 sC
 sC
 sC
 sC
 sC
-sC
+Qb
 sC
 sC
 sC
@@ -46738,11 +46889,11 @@ lp
 lp
 lp
 As
-As
+jB
 tT
-KL
-JH
 AR
+JH
+HP
 ti
 QB
 th
@@ -47000,7 +47151,7 @@ Qz
 cW
 Tx
 qD
-gm
+HP
 QB
 th
 QB
@@ -47023,11 +47174,11 @@ gd
 wV
 cK
 ob
-wD
+bH
 sC
 sC
 wP
-fz
+NZ
 ZE
 wP
 zf
@@ -49087,12 +49238,12 @@ sv
 Hu
 Hu
 Hu
-Vl
+Hu
 Hu
 Hu
 SM
 SM
-iy
+xv
 Hu
 XK
 td
@@ -49356,8 +49507,8 @@ GL
 im
 Jk
 aO
-OW
-OW
+ak
+ak
 VI
 yI
 fB
@@ -49613,8 +49764,8 @@ SM
 QZ
 ak
 kd
-JV
-JV
+kd
+kd
 kd
 kd
 kd
@@ -49850,7 +50001,7 @@ Ia
 EJ
 DY
 hX
-tF
+FT
 Qn
 Qn
 Qn
@@ -50375,7 +50526,7 @@ WK
 NJ
 Hy
 gp
-si
+Qn
 aK
 PU
 tg
@@ -51140,7 +51291,7 @@ oa
 RP
 Ja
 Ja
-si
+Qn
 Qn
 OP
 Qn
@@ -51160,8 +51311,8 @@ kd
 kd
 kd
 kd
-JV
-JV
+kd
+kd
 fM
 im
 XI
@@ -51417,8 +51568,8 @@ ak
 mT
 Yc
 ci
-OW
-OW
+ak
+ak
 NW
 im
 hy
@@ -51646,13 +51797,13 @@ NT
 jU
 Ja
 up
-Hs
-wx
-Hs
+UT
+ao
+Ft
 UT
 Gj
-gf
-wx
+iq
+va
 CG
 yJ
 Qn
@@ -52160,11 +52311,11 @@ mG
 WE
 Ja
 tw
-wx
-wx
-Ki
+KL
+KL
+UE
 Wm
-Ki
+wx
 wx
 tk
 Ja
@@ -52175,7 +52326,7 @@ gW
 io
 NM
 gW
-Wq
+gW
 jp
 rn
 JE
@@ -52416,12 +52567,12 @@ tu
 NT
 QV
 Ja
-Zm
-Ki
-wx
-wx
-wx
-wx
+CH
+Hs
+Hs
+Hs
+Hs
+Vl
 wx
 wT
 Ja
@@ -52675,10 +52826,10 @@ MG
 Ja
 Vx
 Hs
-Ki
-wx
-wx
-Ki
+Hs
+Hs
+Hs
+ht
 wx
 xX
 Ja
@@ -52931,13 +53082,13 @@ mG
 MG
 Ja
 Yh
-Ki
-wx
+UT
+ao
 bj
-Ki
+iy
 Gb
 wx
-zw
+xI
 Ja
 tG
 gR
@@ -54221,8 +54372,8 @@ kq
 eD
 eL
 sM
-wx
-bz
+Vl
+JV
 iG
 tG
 nO
@@ -54473,13 +54624,13 @@ Rq
 NL
 Ja
 Iu
-xI
-wj
+kq
+kq
 Vs
 wx
 wx
-wx
-zw
+Vl
+JV
 iG
 tG
 nO
@@ -54720,22 +54871,22 @@ ce
 ce
 ce
 Nh
-Ve
+Ye
 QJ
-fH
+dg
 UC
 wc
 yA
 UC
 ed
 Ja
+eN
+kq
+Nu
 Ja
-Ja
-Ja
-Ja
-Ja
-mf
+HD
 wx
+zd
 WP
 iG
 tG
@@ -54978,22 +55129,22 @@ jF
 xL
 wL
 PW
-iF
+nu
 UO
 tu
 iO
 Zc
 GI
 cx
-Sh
-mr
-mW
-RF
-Vy
 Ja
+xM
+kq
 Li
+Ja
+LO
+wx
 py
-zw
+xI
 Ja
 yH
 nO
@@ -55234,21 +55385,21 @@ Ti
 gV
 Xi
 PW
-jj
+PW
 nu
-UE
+UO
 tu
 iM
 aJ
 oz
 LK
-Sh
-Df
-Cm
-Cm
-mH
 Ja
-mf
+tP
+Kx
+Ve
+Ja
+Jm
+wx
 gf
 bz
 kn
@@ -55490,7 +55641,7 @@ yF
 VR
 gV
 Xi
-tE
+PW
 gA
 yD
 UO
@@ -55499,11 +55650,11 @@ XP
 Ug
 Yx
 yW
-Sh
-Vb
-ib
-Fc
-oL
+Ja
+ZI
+wj
+vh
+Dl
 DI
 ZW
 Kr
@@ -55756,12 +55907,12 @@ UC
 UC
 UC
 Hv
-Sh
-zI
-Sh
-zI
-Sh
 Ja
+gM
+rd
+kq
+dj
+Zm
 wx
 Fq
 WT
@@ -56013,12 +56164,12 @@ WL
 vi
 nX
 DG
-Sh
-yU
-Sh
-Sq
-af
 Ja
+AV
+WB
+Cn
+dj
+DD
 iD
 wx
 Jr
@@ -56270,11 +56421,11 @@ xw
 Wc
 vd
 ON
-Sh
-Sh
-Sh
-Sh
-Sh
+Ja
+Ja
+Ja
+Ja
+Ja
 Ja
 Ja
 PA
@@ -57069,8 +57220,8 @@ yZ
 Md
 mZ
 aq
+Md
 DC
-yd
 SJ
 lo
 kA
@@ -57316,18 +57467,18 @@ FI
 Us
 Us
 fD
-FQ
+Us
 Us
 Ow
 Ow
 Ow
-Ow
-tB
-Yj
-Yj
-Yj
-nj
-DC
+Us
+HC
+HC
+HC
+HC
+HC
+fT
 Ae
 lo
 YM
@@ -57573,17 +57724,17 @@ FI
 KN
 qZ
 hQ
-yB
 Ik
 jv
 JY
 JY
 sg
-ae
-eu
-lp
-Yj
-Yj
+Us
+mr
+mW
+RF
+Vy
+HC
 Fh
 SJ
 vU
@@ -57830,17 +57981,17 @@ FI
 kc
 yB
 Vv
-yB
-Zh
+eU
 RB
 DZ
 DZ
 Ny
-uf
-eu
-lp
-lp
-Yj
+Us
+Df
+Cm
+Cm
+mH
+HC
 oh
 Bs
 lo
@@ -58087,20 +58238,20 @@ Us
 Gn
 yB
 tU
-Kx
 CX
 RB
 DZ
 DZ
 Ny
-uf
-eu
-lp
-lp
-Yj
+Us
+Vb
+ib
+Fc
+oL
+Cl
 ML
-SJ
-lo
+uN
+RT
 GE
 Yj
 VD
@@ -58345,16 +58496,16 @@ yB
 yB
 fg
 FO
-ht
 RB
 DZ
 DZ
 Ny
-uf
-eu
-lp
-lp
-PR
+Us
+zI
+Sh
+zI
+Sh
+HC
 Xo
 Ae
 lo
@@ -58601,17 +58752,17 @@ mV
 Ra
 lS
 rD
-DD
 Gc
 KE
 Eb
 Eb
 bf
-uf
-eu
-lp
-lp
-PR
+Us
+yU
+Sh
+Sq
+af
+HC
 Pl
 yd
 lo
@@ -58863,12 +59014,12 @@ uf
 uf
 uf
 uf
-uf
-uf
-eu
-ji
-ji
-PR
+tB
+Zh
+Zh
+Zh
+Zh
+HC
 Nd
 Ae
 lo
