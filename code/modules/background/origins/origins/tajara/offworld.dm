@@ -29,7 +29,7 @@
 	name = "Little Adhomai"
 	desc = "Little Adhomai is the largest off-world Tajaran community. Situated in Mendell City, District Six is the home of most Tajara living in the Republic of Tau Ceti. Because of its relatively short existence, discrimination, and other barriers present in Tau Ceti, the Tajara of Little Adhomai still clings to their native culture. Even the few individuals born here carry a great Adhomian influence, usually identifying themselves with their family's origins. Despite this influence, District Six is also home to its own cultural expressions."
 	possible_accents = list(ACCENT_REPUBICLANSIIK, ACCENT_NAZIRASIIK, ACCENT_CREVAN, ACCENT_DASNRRASIIK, ACCENT_HIGHHARRSIIK, ACCENT_LOWHARRSIIK, ACCENT_AMOHDASIIK, ACCENT_NORTHRASNRR, ACCENT_DINAKK)
-	possible_citizenships = CITIZENSHIPS_ADHOMAI
+	possible_citizenships = CITIZENSHIPS_LITTLE_ADHOMAI
 	possible_religions = RELIGIONS_ADHOMAI
 
 /singleton/origin_item/origin/little_adhomai/zhan

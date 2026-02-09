@@ -385,3 +385,304 @@
 	job_species_blacklist = list(
 		"Consular Officer" = ALL_SPECIES
 	)
+
+
+/datum/citizenship/pra_ceti
+	name = CITIZENSHIP_PRA_CETI
+	description = "Dual citizenship of the Republic of Biesel and the People's Republic of Adhomai. A Consular character with this selected would be representing the Republic of Biesel."
+	important_information
+	consular_outfit = /obj/outfit/job/representative/consular/ceti
+	assistant_outfit = /obj/outfit/job/diplomatic_aide/ceti
+	bodyguard_outfit = /obj/outfit/job/diplomatic_bodyguard/ceti
+	linked_citizenship = CITIZENSHIP_BIESEL
+
+	job_species_blacklist = list(
+		"Consular Officer" = list(
+			SPECIES_HUMAN,
+			SPECIES_HUMAN_OFFWORLD,
+			SPECIES_IPC,
+			SPECIES_IPC_BISHOP,
+			SPECIES_IPC_G1,
+			SPECIES_IPC_G2,
+			SPECIES_IPC_SHELL,
+			SPECIES_IPC_UNBRANDED,
+			SPECIES_IPC_XION,
+			SPECIES_IPC_ZENGHU,
+			SPECIES_DIONA,
+			SPECIES_DIONA_COEUS,
+			SPECIES_SKRELL,
+			SPECIES_SKRELL_AXIORI,
+			SPECIES_UNATHI,
+			SPECIES_VAURCA_WORKER,
+			SPECIES_VAURCA_WARRIOR,
+			SPECIES_VAURCA_ATTENDANT,
+			SPECIES_VAURCA_BULWARK,
+			SPECIES_VAURCA_BREEDER,
+			SPECIES_TAJARA_ZHAN,
+			SPECIES_TAJARA_MSAI
+		),
+		"Diplomatic Aide" = list(
+			SPECIES_HUMAN,
+			SPECIES_HUMAN_OFFWORLD,
+			SPECIES_IPC,
+			SPECIES_IPC_BISHOP,
+			SPECIES_IPC_G1,
+			SPECIES_IPC_G2,
+			SPECIES_IPC_SHELL,
+			SPECIES_IPC_UNBRANDED,
+			SPECIES_IPC_XION,
+			SPECIES_IPC_ZENGHU,
+			SPECIES_DIONA,
+			SPECIES_DIONA_COEUS,
+			SPECIES_SKRELL,
+			SPECIES_SKRELL_AXIORI,
+			SPECIES_UNATHI,
+			SPECIES_VAURCA_WORKER,
+			SPECIES_VAURCA_WARRIOR,
+			SPECIES_VAURCA_ATTENDANT,
+			SPECIES_VAURCA_BULWARK,
+			SPECIES_VAURCA_BREEDER,
+			SPECIES_TAJARA_ZHAN
+		),
+		"Diplomatic Bodyguard" = list(
+			SPECIES_HUMAN,
+			SPECIES_HUMAN_OFFWORLD,
+			SPECIES_IPC,
+			SPECIES_IPC_BISHOP,
+			SPECIES_IPC_G1,
+			SPECIES_IPC_G2,
+			SPECIES_IPC_SHELL,
+			SPECIES_IPC_UNBRANDED,
+			SPECIES_IPC_XION,
+			SPECIES_IPC_ZENGHU,
+			SPECIES_DIONA,
+			SPECIES_DIONA_COEUS,
+			SPECIES_SKRELL,
+			SPECIES_SKRELL_AXIORI,
+			SPECIES_UNATHI,
+			SPECIES_VAURCA_WORKER,
+			SPECIES_VAURCA_WARRIOR,
+			SPECIES_VAURCA_ATTENDANT,
+			SPECIES_VAURCA_BULWARK,
+			SPECIES_VAURCA_BREEDER,
+			SPECIES_TAJARA_ZHAN
+		)
+	)
+
+
+/datum/citizenship/pra_ceti/get_objectives(mission_level, var/mob/living/carbon/human/H)
+	var/rep_objectives
+
+	switch(mission_level)
+		if(REPRESENTATIVE_MISSION_HIGH)
+			rep_objectives = pick("Compile and report and audit [rand(1,3)] suspicious indivduals who might be spies or otherwise act hostile against the Republic.",
+								"Have [rand(2,6)] crewmembers sign a pledge of loyalty to the Republic.")
+
+		if(REPRESENTATIVE_MISSION_MEDIUM)
+			rep_objectives = pick("Convince [rand(2,4)] Tau Ceti crewmembers who are not a part of Command or Security to join the Tau Ceti Foreign Legion.",
+								"Convince [rand(3,6)] crewmembers of Tau Ceti superiority over the Sol Alliance.")
+		else
+			rep_objectives = pick("Run a questionnaire on Tau Ceti citizens' views on synthetic citizenship.",
+								"Run a questionnaire on Tau Ceti citizens' views on vaurca citizenship.")
+
+
+	return rep_objectives
+
+/datum/citizenship/dpra_ceti
+	name = CITIZENSHIP_DPRA_CETI
+	description = "Dual citizenship of the Republic of Biesel and the Democratic People's Republic of Adhomai. A Consular character with this selected would be representing the Republic of Biesel."
+	consular_outfit = /obj/outfit/job/representative/consular/ceti
+	assistant_outfit = /obj/outfit/job/diplomatic_aide/ceti
+	bodyguard_outfit = /obj/outfit/job/diplomatic_bodyguard/ceti
+	linked_citizenship = CITIZENSHIP_BIESEL
+
+	job_species_blacklist = list(
+		"Consular Officer" = list(
+			SPECIES_HUMAN,
+			SPECIES_HUMAN_OFFWORLD,
+			SPECIES_IPC,
+			SPECIES_IPC_BISHOP,
+			SPECIES_IPC_G1,
+			SPECIES_IPC_G2,
+			SPECIES_IPC_SHELL,
+			SPECIES_IPC_UNBRANDED,
+			SPECIES_IPC_XION,
+			SPECIES_IPC_ZENGHU,
+			SPECIES_DIONA,
+			SPECIES_DIONA_COEUS,
+			SPECIES_SKRELL,
+			SPECIES_SKRELL_AXIORI,
+			SPECIES_UNATHI,
+			SPECIES_VAURCA_WORKER,
+			SPECIES_VAURCA_WARRIOR,
+			SPECIES_VAURCA_ATTENDANT,
+			SPECIES_VAURCA_BULWARK,
+			SPECIES_VAURCA_BREEDER,
+			SPECIES_TAJARA_ZHAN,
+			SPECIES_TAJARA_MSAI
+		),
+		"Diplomatic Aide" = list(
+			SPECIES_HUMAN,
+			SPECIES_HUMAN_OFFWORLD,
+			SPECIES_IPC,
+			SPECIES_IPC_BISHOP,
+			SPECIES_IPC_G1,
+			SPECIES_IPC_G2,
+			SPECIES_IPC_SHELL,
+			SPECIES_IPC_UNBRANDED,
+			SPECIES_IPC_XION,
+			SPECIES_IPC_ZENGHU,
+			SPECIES_DIONA,
+			SPECIES_DIONA_COEUS,
+			SPECIES_SKRELL,
+			SPECIES_SKRELL_AXIORI,
+			SPECIES_UNATHI,
+			SPECIES_VAURCA_WORKER,
+			SPECIES_VAURCA_WARRIOR,
+			SPECIES_VAURCA_ATTENDANT,
+			SPECIES_VAURCA_BULWARK,
+			SPECIES_VAURCA_BREEDER,
+			SPECIES_TAJARA_ZHAN
+		),
+		"Diplomatic Bodyguard" = list(
+			SPECIES_HUMAN,
+			SPECIES_HUMAN_OFFWORLD,
+			SPECIES_IPC,
+			SPECIES_IPC_BISHOP,
+			SPECIES_IPC_G1,
+			SPECIES_IPC_G2,
+			SPECIES_IPC_SHELL,
+			SPECIES_IPC_UNBRANDED,
+			SPECIES_IPC_XION,
+			SPECIES_IPC_ZENGHU,
+			SPECIES_DIONA,
+			SPECIES_DIONA_COEUS,
+			SPECIES_SKRELL,
+			SPECIES_SKRELL_AXIORI,
+			SPECIES_UNATHI,
+			SPECIES_VAURCA_WORKER,
+			SPECIES_VAURCA_WARRIOR,
+			SPECIES_VAURCA_ATTENDANT,
+			SPECIES_VAURCA_BULWARK,
+			SPECIES_VAURCA_BREEDER,
+			SPECIES_TAJARA_ZHAN
+		)
+	)
+
+/datum/citizenship/dpra_ceti/get_objectives(mission_level, var/mob/living/carbon/human/H)
+	var/rep_objectives
+
+	switch(mission_level)
+		if(REPRESENTATIVE_MISSION_HIGH)
+			rep_objectives = pick("Compile and report and audit [rand(1,3)] suspicious indivduals who might be spies or otherwise act hostile against the Republic.",
+								"Have [rand(2,6)] crewmembers sign a pledge of loyalty to the Republic.")
+
+		if(REPRESENTATIVE_MISSION_MEDIUM)
+			rep_objectives = pick("Convince [rand(2,4)] Tau Ceti crewmembers who are not a part of Command or Security to join the Tau Ceti Foreign Legion.",
+								"Convince [rand(3,6)] crewmembers of Tau Ceti superiority over the Sol Alliance.")
+		else
+			rep_objectives = pick("Run a questionnaire on Tau Ceti citizens' views on synthetic citizenship.",
+								"Run a questionnaire on Tau Ceti citizens' views on vaurca citizenship.")
+
+
+	return rep_objectives
+
+
+/datum/citizenship/nka_ceti
+	name = CITIZENSHIP_NKA_CETI
+	description = "Dual citizenship of the Republic of Biesel and the New Kingdom of Adhomai. A Consular character with this selected would be representing the Republic of Biesel."
+	consular_outfit = /obj/outfit/job/representative/consular/ceti
+	assistant_outfit = /obj/outfit/job/diplomatic_aide/ceti
+	bodyguard_outfit = /obj/outfit/job/diplomatic_bodyguard/ceti
+	linked_citizenship = CITIZENSHIP_BIESEL
+
+	job_species_blacklist = list(
+		"Consular Officer" = list(
+			SPECIES_HUMAN,
+			SPECIES_HUMAN_OFFWORLD,
+			SPECIES_IPC,
+			SPECIES_IPC_BISHOP,
+			SPECIES_IPC_G1,
+			SPECIES_IPC_G2,
+			SPECIES_IPC_SHELL,
+			SPECIES_IPC_UNBRANDED,
+			SPECIES_IPC_XION,
+			SPECIES_IPC_ZENGHU,
+			SPECIES_DIONA,
+			SPECIES_DIONA_COEUS,
+			SPECIES_SKRELL,
+			SPECIES_SKRELL_AXIORI,
+			SPECIES_UNATHI,
+			SPECIES_VAURCA_WORKER,
+			SPECIES_VAURCA_WARRIOR,
+			SPECIES_VAURCA_ATTENDANT,
+			SPECIES_VAURCA_BULWARK,
+			SPECIES_VAURCA_BREEDER,
+			SPECIES_TAJARA_ZHAN,
+			SPECIES_TAJARA_MSAI
+		),
+		"Diplomatic Aide" = list(
+			SPECIES_HUMAN,
+			SPECIES_HUMAN_OFFWORLD,
+			SPECIES_IPC,
+			SPECIES_IPC_BISHOP,
+			SPECIES_IPC_G1,
+			SPECIES_IPC_G2,
+			SPECIES_IPC_SHELL,
+			SPECIES_IPC_UNBRANDED,
+			SPECIES_IPC_XION,
+			SPECIES_IPC_ZENGHU,
+			SPECIES_DIONA,
+			SPECIES_DIONA_COEUS,
+			SPECIES_SKRELL,
+			SPECIES_SKRELL_AXIORI,
+			SPECIES_UNATHI,
+			SPECIES_VAURCA_WORKER,
+			SPECIES_VAURCA_WARRIOR,
+			SPECIES_VAURCA_ATTENDANT,
+			SPECIES_VAURCA_BULWARK,
+			SPECIES_VAURCA_BREEDER,
+			SPECIES_TAJARA_ZHAN
+		),
+		"Diplomatic Bodyguard" = list(
+			SPECIES_HUMAN,
+			SPECIES_HUMAN_OFFWORLD,
+			SPECIES_IPC,
+			SPECIES_IPC_BISHOP,
+			SPECIES_IPC_G1,
+			SPECIES_IPC_G2,
+			SPECIES_IPC_SHELL,
+			SPECIES_IPC_UNBRANDED,
+			SPECIES_IPC_XION,
+			SPECIES_IPC_ZENGHU,
+			SPECIES_DIONA,
+			SPECIES_DIONA_COEUS,
+			SPECIES_SKRELL,
+			SPECIES_SKRELL_AXIORI,
+			SPECIES_UNATHI,
+			SPECIES_VAURCA_WORKER,
+			SPECIES_VAURCA_WARRIOR,
+			SPECIES_VAURCA_ATTENDANT,
+			SPECIES_VAURCA_BULWARK,
+			SPECIES_VAURCA_BREEDER,
+			SPECIES_TAJARA_ZHAN
+		)
+	)
+
+/datum/citizenship/nka_ceti/get_objectives(mission_level, var/mob/living/carbon/human/H)
+	var/rep_objectives
+
+	switch(mission_level)
+		if(REPRESENTATIVE_MISSION_HIGH)
+			rep_objectives = pick("Compile and report and audit [rand(1,3)] suspicious indivduals who might be spies or otherwise act hostile against the Republic.",
+								"Have [rand(2,6)] crewmembers sign a pledge of loyalty to the Republic.")
+
+		if(REPRESENTATIVE_MISSION_MEDIUM)
+			rep_objectives = pick("Convince [rand(2,4)] Tau Ceti crewmembers who are not a part of Command or Security to join the Tau Ceti Foreign Legion.",
+								"Convince [rand(3,6)] crewmembers of Tau Ceti superiority over the Sol Alliance.")
+		else
+			rep_objectives = pick("Run a questionnaire on Tau Ceti citizens' views on synthetic citizenship.",
+								"Run a questionnaire on Tau Ceti citizens' views on vaurca citizenship.")
+
+
+	return rep_objectives
